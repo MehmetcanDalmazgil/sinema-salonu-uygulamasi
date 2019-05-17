@@ -39,7 +39,7 @@ public class SinemaSalonuUygulaması {
         switch (Sinema.salon) {
 
             case 1: {
-
+                // Salon 1,Salon 2, Salon 3,Salon 4,Salon 5 classları Sinema Salonundan extends edildiği için Sinema Salonu classında yer alan metotlar bu classlardan türetilen nesneler için kullanılabildi.
                 Avengers.SeansSeçim(Avengers.seanslar);
                 Avengers.KoltukSeçim(Avengers.seanslar);
                 Fatura.Bilgi(Avengers.seanslar, Avengers.seçseans, Avengers.harf, Avengers.sayı, Avengers.tutar);
