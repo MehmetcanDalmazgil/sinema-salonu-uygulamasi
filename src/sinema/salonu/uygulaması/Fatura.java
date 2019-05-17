@@ -22,7 +22,7 @@ public class Fatura extends SinemaSalonu {
         this.Fatura = " " + seanslar[0] + " Seans Saati: " + seanslar[seçseans + 2] + "\n KoltukNo: " + harf + sayı + "\n Ödenecek Tutar: " + tutar + "TL";
 
         try {
-            File dosya = new File("C:\\SinemaSalonu\\Fatura.txt"); //Elde edilen Bilet bilgileri Sinema Salonu Dosyası içinde bulunan Fatura.txt içine yazıldı.  
+            File dosya = new File("C:\\SinemaSalonu\\Fatura.txt"); //Elde edilen Bilet bilgileri Sinema Salonu Dosyası içinde bulunan Fatura.txt içine yazıldı.(Uygulamanın çalışması için kullanılacağı bilgisayarda bu dosyanın oluşturulaması gerekmektedir.)  
             FileWriter yazici = new FileWriter(dosya, true);
             BufferedWriter yaz = new BufferedWriter(yazici);
             yaz.write(Fatura);
