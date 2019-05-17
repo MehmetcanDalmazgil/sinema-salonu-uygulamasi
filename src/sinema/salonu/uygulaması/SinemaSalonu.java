@@ -86,7 +86,7 @@ public class SinemaSalonu {
                 } catch (InterruptedException e) {
                 }
 
-                SalonSeçim();
+                SalonSeçim(); // Salon seçiminin kullanıcı tarafından doğru yapılması için 3 hak verildi. Kullanıcı 3 defa geçerli olmayan bir seçim yaptığında metot kendi içinde çağrılarak tekrar Salon Seçim işlemi başlatıldı.
             }
 
         }
@@ -158,7 +158,7 @@ public class SinemaSalonu {
         } catch (InterruptedException e) {
         }
 
-        SalonKoltuk();
+        SalonKoltuk(); // Metot içinde farklı metotlardan yararlanıldı. Main metotumuzda daha az metot çağrılarak daha çok işlem yapılmış oldu.
 
         KoltukKarar(this.SalonKoltuk);
 
@@ -166,7 +166,7 @@ public class SinemaSalonu {
 
     public void SalonKoltuk() {
 
-        Random r = new Random();
+        Random r = new Random(); 
 
         for (int i = 0; i < 40; i++) {
 
@@ -174,7 +174,7 @@ public class SinemaSalonu {
 
             int y = r.nextInt(9);
 
-            SalonKoltuk[x][y] = 1;
+            SalonKoltuk[x][y] = 1; // Random komutu yardımıyla Salon Koltukları içinde bazı koltuklar rastgele dolduruldu.
 
         }
         System.out.println("   A    B    C    D    E    F    G    H    I   ");
